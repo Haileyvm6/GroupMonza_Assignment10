@@ -14,6 +14,7 @@ from dataPackage import *
 import json
 
 class cleandata:
+
     def clean_city_data(parsed_json):
         """Extract city name, country, and population from raw JSON data"""
         clean_data =[]
