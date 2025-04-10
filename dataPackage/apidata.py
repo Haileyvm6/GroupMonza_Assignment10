@@ -33,6 +33,8 @@ class APIdata:
         parsed_json = json.loads(json_string) # Now we have a python dictionary
 
         total = int(parsed_json['metadata']['totalCount']) # The number of cities that were returned
+        
+        self.data = parsed_json['data']
 
         for city in parsed_json['data']:
                 print(city)

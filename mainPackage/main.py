@@ -1,9 +1,12 @@
 # main.py
 
-from dataPackage import apidata
+from csv import *
+from csvPackage.csv import JSONToCSV
 from dataPackage.apidata import *
 from cleanPackage.clean import *
 
 if __name__ == "__main__":
-    city_data = APIdata()
-    city_data.get_city_data()
+    api = APIdata()
+    api.get_city_data()
+    csv = JSONToCSV(api.data)
+    csv.convert_to_csv()
