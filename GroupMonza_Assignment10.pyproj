@@ -25,6 +25,7 @@
     <Compile Include="cleanPackage\clean.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="cleanPackage\insights.py" />
     <Compile Include="cleanPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
